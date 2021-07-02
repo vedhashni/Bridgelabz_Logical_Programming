@@ -4,6 +4,7 @@ namespace Logical_Programming
 {
     /// <summary>
     /// UC1 - To find fibonacci series
+    /// UC2 - To find the perfect number
     /// </summary>
     class Program
     {
@@ -14,6 +15,7 @@ namespace Logical_Programming
             while (true)
             {
                 // '1' - is used to find the Fibonacci series
+                // '2' - is used to find the perfect number
 
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
@@ -25,7 +27,17 @@ namespace Logical_Programming
                         break;
 
                     case 2:
+                        Console.WriteLine("Enter the number");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        Program.perfectnumber(n);
+                        break;
+
+                    case 3:
                         return;
+
+                    default:
+                        break;
+
                 }
             }
         }
@@ -43,6 +55,28 @@ namespace Logical_Programming
                 Console.Write("{0}", s);
                 f1 = f2;
                 f2 = s;
+            }
+        }
+
+        // Fuction to find the perfect number
+
+        public static void perfectnumber(int n)
+        {
+            int s = 0;
+            for(int i=1;i<n;i++)
+            {
+                if(n%i==0)
+                {
+                    s += i;
+                }
+            }
+            if(s==n)
+            {
+                Console.WriteLine("{0} is perfect number",n);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not perfect number",n);
             }
         }
     }
