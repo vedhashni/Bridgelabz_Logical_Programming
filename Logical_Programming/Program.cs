@@ -20,6 +20,7 @@ namespace Logical_Programming
                 // '4' -  is used to reverse a number
                 // '5' - is used to generate distinct coupon number
                 // '6' - is used to find the elapsed time
+                // '7' - is used to find the minimaal notes
 
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
@@ -50,6 +51,10 @@ namespace Logical_Programming
 
                     case 6:
                         StopWatch.elapsed();
+                        break;
+
+                    case 7:
+                        VendingMachine.Generat();
                         break;
 
                     default:

@@ -12,6 +12,7 @@ namespace Logical_Programming
     /// </summary>
     class StopWatch
     {
+
         public static void elapsed()
         {
 
