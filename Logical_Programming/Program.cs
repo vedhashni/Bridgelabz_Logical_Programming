@@ -16,7 +16,7 @@ namespace Logical_Programming
             {
                 // '1' - is used to find the Fibonacci series
                 // '2' - is used to find the perfect number
-
+                // '3' - is used to find the prime number in a range
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -33,7 +33,8 @@ namespace Logical_Programming
                         break;
 
                     case 3:
-                        return;
+                        PrimeNumber.FindingPrime();
+                        break;
 
                     default:
                         break;
