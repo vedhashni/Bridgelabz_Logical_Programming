@@ -71,6 +71,10 @@ namespace Logical_Programming
                         MonthlyPayment.calculatePayment();
                         break;
 
+                    case 11:
+                        SquareRoot.Root();
+                        break;
+
                     default:
                         break;
 
