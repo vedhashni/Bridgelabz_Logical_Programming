@@ -19,6 +19,8 @@ namespace Logical_Programming
                 // '3' - is used to find the prime number in a range
                 // '4' -  is used to reverse a number
                 // '5' - is used to generate distinct coupon number
+                // '6' - is used to find the elapsed time
+
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -44,6 +46,10 @@ namespace Logical_Programming
 
                     case 5:
                         CouponNumber.GeneratingCouponNum();
+                        break;
+
+                    case 6:
+                        StopWatch.elapsed();
                         break;
 
                     default:
