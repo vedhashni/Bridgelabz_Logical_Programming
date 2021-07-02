@@ -79,6 +79,13 @@ namespace Logical_Programming
                         BinaryConversion.bincon();
                         break;
 
+                    case 13:
+                        SwapNib.swap();
+                        break;
+
+                    case 14:
+                        return;
+
                     default:
                         break;
 
