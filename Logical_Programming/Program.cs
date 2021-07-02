@@ -75,6 +75,10 @@ namespace Logical_Programming
                         SquareRoot.Root();
                         break;
 
+                    case 12:
+                        BinaryConversion.bincon();
+                        break;
+
                     default:
                         break;
 
