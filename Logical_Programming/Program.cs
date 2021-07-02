@@ -17,6 +17,7 @@ namespace Logical_Programming
                 // '1' - is used to find the Fibonacci series
                 // '2' - is used to find the perfect number
                 // '3' - is used to find the prime number in a range
+                // '4' -  is used to reverse a number
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -34,6 +35,10 @@ namespace Logical_Programming
 
                     case 3:
                         PrimeNumber.FindingPrime();
+                        break;
+
+                    case 4:
+                        ReversingNumber.revnum();
                         break;
 
                     default:
