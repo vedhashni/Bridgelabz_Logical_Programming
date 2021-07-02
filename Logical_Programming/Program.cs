@@ -18,6 +18,7 @@ namespace Logical_Programming
                 // '2' - is used to find the perfect number
                 // '3' - is used to find the prime number in a range
                 // '4' -  is used to reverse a number
+                // '5' - is used to generate distinct coupon number
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -39,6 +40,10 @@ namespace Logical_Programming
 
                     case 4:
                         ReversingNumber.revnum();
+                        break;
+
+                    case 5:
+                        CouponNumber.GeneratingCouponNum();
                         break;
 
                     default:
