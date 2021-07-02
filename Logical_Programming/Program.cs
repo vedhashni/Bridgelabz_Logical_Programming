@@ -23,6 +23,7 @@ namespace Logical_Programming
                 // '7' - is used to find the minimaal notes
                 // '8' - is used to find the day of the week
                 // '9' - is used to find the temperature conversion celsius to fahrenheit
+                // '10' - is used to find the monthly payment
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -64,6 +65,10 @@ namespace Logical_Programming
 
                     case 9:
                         TemperatureConversion.Conversion();
+                        break;
+
+                    case 10:
+                        MonthlyPayment.calculatePayment();
                         break;
 
                     default:
