@@ -12,9 +12,9 @@ namespace Logical_Programming
     {
         public static void GeneratingCouponNum()
         {
-            Console.WriteLine("Enter start time");
+            Console.WriteLine("Enter start value");
             int s = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter end time");
+            Console.WriteLine("Enter end value");
             int e = Convert.ToInt32(Console.ReadLine());
             int num = e - s;
             int randomcount = 0;
