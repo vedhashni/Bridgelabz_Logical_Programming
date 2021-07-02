@@ -21,6 +21,7 @@ namespace Logical_Programming
                 // '5' - is used to generate distinct coupon number
                 // '6' - is used to find the elapsed time
                 // '7' - is used to find the minimaal notes
+                // '8' - is used to find the day of the week
 
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
@@ -55,6 +56,10 @@ namespace Logical_Programming
 
                     case 7:
                         VendingMachine.Generat();
+                        break;
+
+                    case 8:
+                        Day.dayofweek();
                         break;
 
                     default:
